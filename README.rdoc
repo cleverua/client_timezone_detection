@@ -1,1 +1,59 @@
-[to be done]
+= best_thumbnail
+
+* http://github.com/cleverua/client_timezone_detection
+
+== DESCRIPTION:
+
+A Ruby On Rails plugin aimed to simplify user timezone detection. It gets TZ 
+information from user browser, saves it in cookie and then applies the TZ in
+controller. That way you always have application TZ set up for the region user is
+actually in.
+
+
+=== USAGE
+
+All you have to do is to include plugin's javascripts in your application layout.
+Just drop the following somewhere in the page head section:
+
+  <%= javascript_include_tz_detection %>
+
+That's all. Now using some before_filter magick the plugin will have set
+request's time zone to match the one received in cookies. That will be the
+timezone user's browser is configured for.
+
+== HOW TO SKIP THE TIMEZONE DETECTION:
+
+It is sometimes necessary to skip timezone detection and setup, say you
+implement a general purpose web service within your app. You can skip it in your
+controller like this:
+
+  skip_before_filter :set_client_time_zone
+
+== INSTALL:
+
+  script/plugin install git://github.com/cleverua/client_timezone_detection.git
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2010 CleverUA
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
