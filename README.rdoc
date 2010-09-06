@@ -29,6 +29,11 @@ controller like this:
 
   skip_before_filter :set_client_time_zone
 
+== IMPORTANT ASSUMPTION
+
+It assumes you use the excellent jQuery library in your application. You use it,
+right? That's the assumption :)
+
 == INSTALL:
 
   script/plugin install git://github.com/cleverua/client_timezone_detection.git
