@@ -1,4 +1,4 @@
-= best_thumbnail
+= Client Timezone Detection Rails plugin
 
 * http://github.com/cleverua/client_timezone_detection
 
