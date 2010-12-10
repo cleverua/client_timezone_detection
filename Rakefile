@@ -12,12 +12,12 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "client_timezone_detection"
+  gem.name = "cleverua-client_timezone_detection"
   gem.homepage = "http://github.com/cleverua/client_timezone_detection"
   gem.license = "MIT"
-  gem.summary = %Q{Gem for detection client time zone}
-  gem.description = %Q{See README}
-  gem.email = "boris@cleverua.com"
+  gem.summary = %Q{A rails gem aimed to simplify user timezone detection}
+  gem.description = %Q{The gem gets timezone information from user browser, saves it in a cookie and then applies the TZ in controller. That way you always have application TZ set up for the region user is actually in.}
+  gem.email = "info@cleverua.com"
   gem.authors = ["Pavlo Lysov, Boris Babusenko"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
