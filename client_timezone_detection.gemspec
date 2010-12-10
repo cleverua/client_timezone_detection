@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "client_timezone_detection.gemspec",
     "js_files/jquery.cookie.js",
     "js_files/time_zone_detection.js",
     "lib/client_timezone_detection.rb",
@@ -32,7 +33,8 @@ Gem::Specification.new do |s|
     "lib/client_timezone_detection/view_helpers.rb",
     "lib/client_timezone_detection_install.rb",
     "test/helper.rb",
-    "test/test_time_zone_detection.rb"
+    "test/test_time_zone_detection.rb",
+    "time_zone_detection.gemspec"
   ]
   s.homepage = %q{http://github.com/cleverua/client_timezone_detection}
   s.licenses = ["MIT"]
