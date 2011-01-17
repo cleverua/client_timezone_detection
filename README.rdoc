@@ -36,8 +36,9 @@ right? That's the assumption :)
 
 == INSTALL:
   
-  Put this string in your Gemfile:
-  gem 'client_timezone_detection', :git => git://github.com/cleverua/client_timezone_detection.git
+Put this string into your Gemfile:
+
+  gem 'cleverua-client_timezone_detection', :require => 'client_timezone_detection'
 
 == LICENSE:
 
